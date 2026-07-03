@@ -1,4 +1,4 @@
-const CACHE_NAME="royal-heritage-v1";
+const CACHE_NAME="royal-heritage-v2";
 const APP_SHELL=[
   "./",
   "./index.html",
