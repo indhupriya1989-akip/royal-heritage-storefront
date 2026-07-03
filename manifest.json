@@ -1,0 +1,22 @@
+{
+  "name": "Royal Heritage",
+  "short_name": "Royal Heritage",
+  "description": "Premium Acrylic Frames & Divine Art",
+  "id": "./",
+  "start_url": "./#home",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait-primary",
+  "background_color": "#120e0e",
+  "theme_color": "#120e0e",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

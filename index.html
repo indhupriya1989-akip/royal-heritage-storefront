@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120d0d" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Royal Heritage" />
+  <meta name="description" content="Royal Heritage premium acrylic frames and divine art." />
+  <title>Royal Heritage — Premium Acrylic Frames & Divine Art</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/royal-heritage-hero.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Complimentary delivery on orders above ₹3,000 <span>•</span> Hand-finished in India</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Royal Heritage home">
+      <span class="brand-mark">RH</span>
+      <span><b>Royal Heritage</b><small>Premium Acrylic Frames & Divine Art</small></span>
+    </a>
+    <nav>
+      <a href="#shop">Collections</a>
+      <a href="#custom">Custom Studio</a>
+      <a href="#supplier">For Retailers</a>
+      <a href="#story">Our Craft</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn install-app" id="installAppBtn" aria-label="Install Royal Heritage app">Install App</button>
+      <button class="icon-btn" id="adminBtn" aria-label="Open admin dashboard">Admin</button>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        Bag <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">ART THAT BLESSES A SPACE</p>
+        <h1>Heritage,<br><em>made luminous.</em></h1>
+        <p class="hero-copy">Museum-like depth. Brilliant acrylic finish. Timeless Indian stories, handcrafted for modern homes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#shop">Explore the collection <span>→</span></a>
+          <a class="text-link" id="createFrameLink" href="#custom">Create your own frame</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>4.9</strong><span>Customer rating</span></div>
+          <div><strong>7-day</strong><span>Dispatch promise</span></div>
+          <div><strong>100%</strong><span>Made in India</span></div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL TO DISCOVER <i></i></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✦</span><b>Gallery-grade acrylic</b><small>Brilliant clarity and lasting colour</small></div>
+      <div><span>◈</span><b>Securely packed</b><small>Layered protection, doorstep ready</small></div>
+      <div><span>⌁</span><b>Thoughtfully handcrafted</b><small>Finished and inspected by hand</small></div>
+      <div><span>✓</span><b>Secure payments</b><small>UPI, cards and net banking</small></div>
+    </section>
+
+    <section class="collection-section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">THE SIGNATURE EDIT</p>
+          <h2>Find the piece<br>that feels like <em>home.</em></h2>
+        </div>
+        <p>Curated works that bring warmth, stillness, and a quiet sense of grandeur to every room.</p>
+      </div>
+      <div class="filter-row" id="filters">
+        <button class="active" data-filter="All">All pieces</button>
+        <button data-filter="God Collection">Divine</button>
+        <button data-filter="Heritage Collection">Heritage</button>
+        <button data-filter="Gift Collection">Gifting</button>
+        <button data-filter="Custom Photo Frames">Custom</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="center"><button class="btn btn-outline" id="viewAllBtn">View all 10 pieces</button></div>
+    </section>
+
+    <section class="custom-section" id="custom">
+      <div class="custom-image">
+        <img src="assets/royal-heritage-hero.png" alt="Royal Heritage framed art gallery" />
+        <div class="image-note"><span>01</span> Your memory, transformed into art.</div>
+      </div>
+      <div class="custom-copy">
+        <p class="eyebrow">THE CUSTOM STUDIO</p>
+        <h2>Your moments.<br><em>Beautifully framed.</em></h2>
+        <p>From wedding portraits to family heirlooms, our studio turns your favourite image into a luminous, gallery-worthy acrylic frame.</p>
+        <ol>
+          <li><b>Upload your photograph</b><span>High-resolution JPG or PNG</span></li>
+          <li><b>Choose your finish</b><span>Size, frame colour and gift wrap</span></li>
+          <li><b>Approve & receive</b><span>We quality-check every detail</span></li>
+        </ol>
+        <button class="btn btn-gold" id="customizeBtn">Start creating <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-copy">
+        <p class="eyebrow">CRAFTED WITH INTENTION</p>
+        <h2>A modern canvas<br>for timeless <em>stories.</em></h2>
+        <p>Royal Heritage brings traditional Indian artistry into contemporary spaces through a radiant acrylic medium. Every piece is chosen for meaning, printed for extraordinary depth, and finished by hand.</p>
+        <div class="stats">
+          <div><strong>6mm</strong><span>Premium acrylic</span></div>
+          <div><strong>HD</strong><span>Colour fidelity</span></div>
+          <div><strong>12+</strong><span>Quality checks</span></div>
+        </div>
+      </div>
+      <blockquote>“A home should hold the stories you never want to forget.”<small>— ROYAL HERITAGE STUDIO</small></blockquote>
+    </section>
+
+    <section class="supplier-section" id="supplier">
+      <div>
+        <p class="eyebrow">RETAIL & MARKETPLACE PARTNERS</p>
+        <h2>Made to move.<br><em>Built to delight.</em></h2>
+        <p>Retail-ready bestsellers with protective packaging, consistent dimensions and compelling margins—prepared for modern commerce.</p>
+        <figure class="supplier-preview">
+          <img src="assets/supplier-catalog.webp" alt="Royal Heritage supplier catalogue with product range, packaging and pricing">
+          <figcaption><span>2026 COLLECTION</span><b>Marketplace-ready supplier catalogue</b></figcaption>
+        </figure>
+        <div class="supplier-tags"><span>Fast-moving SKUs</span><span>Wholesale pricing</span><span>Barcode ready</span><span>Pan-India supply</span></div>
+      </div>
+      <form id="supplierForm" class="supplier-card">
+        <p>Request the supplier catalogue</p>
+        <label>Name<input required name="name" placeholder="Your full name"></label>
+        <label>Business email<input required type="email" name="email" placeholder="you@company.com"></label>
+        <label>Company / marketplace<input name="company" placeholder="Company name"></label>
+        <label>Phone number<input required name="phone" pattern="[0-9+\s-]{8,15}" placeholder="+91 98765 43210"></label>
+        <button class="btn btn-gold" type="submit">Generate email request <span>→</span></button>
+        <div class="email-actions" id="supplierEmailActions" hidden>
+          <a id="openMailLink" href="#">Open in mail app</a>
+          <button id="downloadEmailBtn" type="button">Download email again</button>
+        </div>
+        <button class="catalog-download" id="downloadCatalogBtn" type="button">Download catalogue preview</button>
+        <p class="form-status" id="supplierStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">RH</span><span><b>Royal Heritage</b><small>ART FOR MEANINGFUL HOMES</small></span></a>
+    <p>Premium acrylic art, handcrafted in India.</p>
+    <div><a href="#shop">Shop</a><a href="#custom">Custom</a><a href="#supplier">Retail</a><a href="mailto:hello@royalheritage.in">Contact</a></div>
+    <small>© 2026 Royal Heritage. All rights reserved.</small>
+  </footer>
+
+  <button class="whatsapp" id="whatsappBtn" aria-label="Order on WhatsApp">⌕ <span>Order on WhatsApp</span></button>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h3>Shopping bag</h3></div><button class="close" data-close="cartDrawer">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="coupon"><input id="couponInput" placeholder="Coupon code"><button id="applyCoupon">Apply</button></div>
+    <div class="totals">
+      <p><span>Subtotal</span><b id="subtotal">₹0</b></p>
+      <p><span>Delivery</span><b id="delivery">₹0</b></p>
+      <p id="discountRow" hidden><span>Coupon saving</span><b id="discount">−₹0</b></p>
+      <p class="grand"><span>Total</span><b id="grandTotal">₹0</b></p>
+    </div>
+    <button class="btn btn-gold full" id="checkoutBtn">Secure checkout <span>→</span></button>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <dialog id="productModal" class="modal product-modal"></dialog>
+  <dialog id="customModal" class="modal"></dialog>
+  <dialog id="checkoutModal" class="modal"></dialog>
+  <dialog id="adminModal" class="modal admin-modal"></dialog>
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
